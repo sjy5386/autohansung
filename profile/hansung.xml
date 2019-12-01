@@ -7,7 +7,7 @@
 		<nonBroadcast>true</nonBroadcast>
 	</SSIDConfig>
 	<connectionType>ESS</connectionType>
-	<connectionMode>manual</connectionMode>
+	<connectionMode>auto</connectionMode>
 	<autoSwitch>false</autoSwitch>
 	<MSM>
 		<security>
