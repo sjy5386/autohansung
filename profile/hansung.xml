@@ -1,0 +1,41 @@
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>hansung</name>
+	<SSIDConfig>
+		<SSID>
+			<name>hansung</name>
+		</SSID>
+		<nonBroadcast>true</nonBroadcast>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<autoSwitch>false</autoSwitch>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2</authentication>
+				<encryption>AES</encryption>
+				<useOneX>true</useOneX>
+			</authEncryption>
+			<OneX xmlns="http://www.microsoft.com/networking/OneX/v1">
+				<cacheUserData>false</cacheUserData>
+				<EAPConfig>
+					<EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+						<EapMethod>
+							<Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type>
+							<VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+							<VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+							<AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">26163</AuthorId>
+						</EapMethod>
+						<Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+							<AuthType>3</AuthType>
+							<ConfigData>EAP-GTC</ConfigData>
+							<PromptCredential>0</PromptCredential>
+							<UserName/>
+							<Password/>
+						</Config>
+					</EapHostConfig>
+				</EAPConfig>
+			</OneX>
+		</security>
+	</MSM>
+</WLANProfile>
