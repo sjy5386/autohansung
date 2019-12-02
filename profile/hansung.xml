@@ -17,7 +17,7 @@
 				<useOneX>true</useOneX>
 			</authEncryption>
 			<OneX xmlns="http://www.microsoft.com/networking/OneX/v1">
-				<cacheUserData>false</cacheUserData>
+				<cacheUserData>true</cacheUserData>
 				<EAPConfig>
 					<EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
 						<EapMethod>
