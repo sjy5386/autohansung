@@ -6,7 +6,7 @@ goto main
 rem Add network profiles.
 :add
 for %%a in ("profile/*.xml") do (
-	netsh wlan add profile filename="profile/%%a" user=all
+    netsh wlan add profile filename="profile/%%a" user=all
 )
 goto :EOF
 
@@ -14,13 +14,13 @@ rem Export network profiles.
 rem @param folder
 :export
 if not exist %1 (
-	mkdir %1
+    mkdir %1
 )
 for %%a in ("profile/*.xml") do (
-	netsh wlan export profile name=%%~na folder=%1
+    netsh wlan export profile name=%%~na folder=%1
 )
 if not exist "%1/*.xml" (
-	rmdir %1
+    rmdir %1
 )
 goto :EOF
 
@@ -37,5 +37,5 @@ echo Wi-Fi connection may be lost during setup.
 pause
 call :add
 if not %errorlevel% == 0 (
-	pause
+    pause
 )
