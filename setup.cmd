@@ -36,6 +36,12 @@ echo User information will be saved, so please set it on your personal PC only.
 echo Wi-Fi connection may be lost during setup.
 pause
 call :add
-if not %errorlevel% == 0 (
-    pause
+if %errorlevel% == 0 (
+    echo Succeeded
+    color 27
+) else (
+    echo Failed
+    color 47
 )
+pause
+color
